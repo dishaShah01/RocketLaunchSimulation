@@ -22,7 +22,8 @@
 
 <div>
 <h4>
-Objective:
+<b>Objective:</b><br>
+To show the simulation of rocket launch and illustrate the concept using opengl.
 </h4>
 <br>
 <h4>
@@ -55,18 +56,17 @@ Clone the project -
   
 Install all the requirements -
 ```
- $ installing opengl
- $ installing python 
+ $ pip install PyOpenGL PyOpenGL_accelerate
 ```
 Start the project, navigate to the project directory on the terminal;
  ### Run the script -
  for linux/mac :
 ```
-  $ python filename.py
+  $ python Rocket_launch.py
 ```  
  for windows :
 ``` 
-  $ python filename.py
+  $ python Rocket_launch.py
 ```
 
  #### Features to be added :
