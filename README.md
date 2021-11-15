@@ -22,12 +22,17 @@
 
 <div>
 <h4>
-<b>Objective:</b><br>
+<b>Objective:</b></h4>
+
 To show the simulation of rocket launch and illustrate the concept using opengl.
-</h4>
+
 <br>
+
+
 <h4>
+<b>
 Scope:
+</b>
 <h4>
 <ul>
 <li>

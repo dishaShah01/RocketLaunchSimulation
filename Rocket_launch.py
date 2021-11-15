@@ -5,6 +5,15 @@ from OpenGL.GLU import *
 import math
 import random
 
+DEG2RAD = 3.14159/180
+count=0
+count1=0
+launch=0
+sky_color=0
+tx=0
+ty=0
+fumes=0
+
 
 
 
