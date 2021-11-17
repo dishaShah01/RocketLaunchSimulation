@@ -278,6 +278,101 @@ def rocket_position():
         glutPostRedisplay()
         glFlush()
 
+def Moving_Rocket():    
+    global sky_color,count,tx,ty
+    count+=1
+    
+    for i in range(195,201):
+        if(count>=50):
+            glClearColor(0.0 ,0.0 ,0.0,1.0)
+            glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT)
+            if(sky_color==0):
+                glColor3f(0, 0, 1)
+                sky_color=1
+            else:
+                stars()
+                sky_color=0
+        else:
+            glClearColor(0.196078  ,0.6 ,0.8,1.0)
+            glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT)
+        if(count>=100):
+            moon(20.0)	 
+        if(count<=300):
+            glColor3f(0.5,0.0 ,0.9)
+            glBegin(GL_POLYGON)
+            glVertex2f(237.5,20.0+i)
+            glVertex2f(262.5,20.0+i)
+            glVertex2f(262.5,120.0+i)
+            glVertex2f(237.5,120.0+i)
+            glEnd()
+        if(count>=150):
+            k = i
+            glColor3f(1.0,1.0,1.0)
+            glBegin(GL_POLYGON)#core
+            glVertex2f(237.5,150.0+k)
+            glVertex2f(252.5,150.0+k)
+            glVertex2f(252.5,120.0+k)
+            glVertex2f(237.5,120.0+k)
+            glEnd()	
+            glBegin(GL_POLYGON)
+            glVertex2f(237.5,140.0+k)
+            glVertex2f(230,140.0+k)
+            glVertex2f(230,130.0+k)
+            glVertex2f(237.5,130.0+k)
+            glVertex2f(262.5,140.0+k)
+            glVertex2f(227.5,140.0+k)
+            glVertex2f(227.5,130.0+k)
+            glVertex2f(262.5,130.0+k)
+            glEnd()
+        else:
+            glColor3f(1.0,1.0,1.0)
+            glBegin(GL_POLYGON)#front
+            glVertex2f(237.5,120.0+i)
+            glVertex2f(262.5,120.0+i)
+            glVertex2f(250,170.0+i)
+            glEnd()	
+        if(count<=120):
+            glColor3f(0.9,0.9,0.0)
+            glBegin(GL_POLYGON)
+            glVertex2f(237.5,120.0+i)
+            glVertex2f(217.5,95.0+i)
+            glVertex2f(237.5,95.0+i)
+            glEnd()
+            glBegin(GL_POLYGON)
+            glVertex2f(237.5,20.0+i)
+            glVertex2f(217.5,20.0+i)
+            glVertex2f(237.5,70.0+i)
+            glEnd()
+            glBegin(GL_POLYGON)
+            glVertex2f(262.5,20.0+i)
+            glVertex2f(282.5,20.0+i)
+            glVertex2f(262.5,70.0+i)
+            glEnd()
+            glBegin(GL_POLYGON)
+            glVertex2f(262.5,120.0+i)
+            glVertex2f(262.5,95.0+i)
+            glVertex2f(282.5,95.0+i)
+            glEnd()
+        if(count<=110):
+            glColor3f(0.556863 ,0.137255  ,0.419608)
+            glBegin(GL_POLYGON)
+            glVertex2f(237.5,20.0+i)
+            glVertex2f(244.5,20.0+i)
+            glVertex2f(241,0.0+i)
+            glEnd()
+            glBegin(GL_POLYGON)
+            glVertex2f(246.5,20.0+i)
+            glVertex2f(253.5,20.0+i)
+            glVertex2f(249.5,0.0+i)
+            glEnd()
+            glBegin(GL_POLYGON)
+            glVertex2f(262.5,20.0+i)
+            glVertex2f(255.5,20.0+i)
+            glVertex2f(258.5,0.0+i)
+            glEnd()	
+    glutSwapBuffers()
+    glutPostRedisplay()
+    glFlush()
 
 glutInit()
 glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGB)
