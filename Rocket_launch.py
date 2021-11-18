@@ -14,6 +14,17 @@ tx=0
 ty=0
 fumes=0
 
+def stars():
+    glColor3f(1.0,1.0,1.0)
+    glPointSize(2)
+    glBegin(GL_POINTS)
+    for s in range(50):
+        x=random.randint(0,800)
+        y=random.randint(0,800)
+        glVertex2i(x,y)
+    glEnd()
+    
+
 def grass():
     glColor3f(0.0,0.9,0.0)
     glPointSize(3)
