@@ -403,7 +403,25 @@ def moon(radius):
     tx=tx+0.1
     ty=ty+0.1
 
+def iterate():
+    glClearColor(0.196078  ,0.6 ,0.8,1.0)
+    glPointSize(1.0)
+    gluOrtho2D(0.0,499.0,0.0,499.0)
 
+
+def Showscreen():
+    global launch,sky_color,count,count1,tx,ty,fumes,DEG2RAD
+    if (launch == 0):
+        glClear(GL_COLOR_BUFFER_BIT)        
+        glutSwapBuffers()
+    else:
+        control()
+    for i in range(100):
+        Rocket_on_Ground()
+    launch = 1
+    for i in range(100):
+        Rocket_on_Ground()
+    glFlush()
 
 glutInit()
 glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGB)
