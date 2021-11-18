@@ -24,6 +24,16 @@ def grass():
         glVertex2i(x,y)
     glEnd()
 
+def control():
+    global launch,sky_color,count,count1,tx,ty,fumes,DEG2RAD
+    count1+=1
+    if(count1==775659):
+        launch=1
+    elif (launch == 1 and (count1 == 805407 )):
+        rocket_position()
+    elif (launch == 1 and count1 >= 1000000):
+        Moving_Rocket()    
+
 def Rocket_on_Ground():
     global launch,count1,DEG2RAD
     count1+=1
@@ -245,9 +255,7 @@ def rocket_position():
         if((fumes%2)==0):
             glColor3f(1.0,0.816,0.0)
         else:
-            glColor3f(1.0,0.25,0.0)
-        
-        
+            glColor3f(1.0,0.25,0.0)        
 
         glBegin(GL_POLYGON)
         glVertex2f(237.5,20+i)
