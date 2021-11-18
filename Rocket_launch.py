@@ -23,7 +23,7 @@ def stars():
         y=random.randint(0,800)
         glVertex2i(x,y)
     glEnd()
-    
+
 
 def grass():
     glColor3f(0.0,0.9,0.0)
@@ -392,6 +392,18 @@ def Moving_Rocket():
     glutSwapBuffers()
     glutPostRedisplay()
     glFlush()
+
+def moon(radius):  
+    global tx,ty,DEG2RAD
+    glBegin(GL_POLYGON)
+    for i in range(359):
+        degInRad = i*DEG2RAD
+        glVertex2f(300+ty+math.cos(degInRad)*radius,500-tx+(math.sin(degInRad))*radius)
+    glEnd()
+    tx=tx+0.1
+    ty=ty+0.1
+
+
 
 glutInit()
 glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGB)
