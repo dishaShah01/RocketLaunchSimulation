@@ -55,6 +55,7 @@ Scope:
 
 
 </div>
+### Output of the project :
 <div align="center">
   
 ![video](Output/vid/output_gif.gif)
