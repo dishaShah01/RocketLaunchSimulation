@@ -47,17 +47,17 @@ Scope:
 
 <div align="center">
   
-![img](output/img/p1.png)
-![img](output/img/p2.png)
-![img](output/img/p3.png)
-![img](output/img/p4.png)
-![img](output/img/p5.png)
+![img](Output/img/p1.png)
+![img](Output/img/p2.png)
+![img](Output/img/p3.png)
+![img](Output/img/p4.png)
+![img](Output/img/p5.png)
 
 
 </div>
 <div align="center">
   
-![video](output/vid/output.mp4)
+![video](Output/vid/output.mp4)
 
 
 </div>
