@@ -57,7 +57,7 @@ Scope:
 </div>
 <div align="center">
   
-![video](Output/vid/output.mp4)
+![video](Output/vid/output_gif.gif)
 
 
 </div>
