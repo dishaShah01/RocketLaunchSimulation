@@ -21,23 +21,13 @@
 </div>
 
 <div>
-<h4><b>Objective:</b></h4>
+<h4><b>Objective :</b></h4>
 
 To show the simulation of rocket launch and illustrate the concept using opengl.
 This project can be used for educational purposes or can also be incorporated into a game for leisure.
-<h4>
-<b>
-Scope:
-</b>
-</h4>
-<ul>
-<li> </li>
-<li> </li>
-</ul>
-</div>
 
 
-### Snapshots of the project :
+### <b>Snapshots of the project :</b>
 
 <div align="center">
   
@@ -50,7 +40,7 @@ Scope:
 
 </div>  
 
-### Output of the project
+### <b>Output of the project</b>
 
 <div align="center">
   
@@ -59,7 +49,7 @@ Scope:
 
 </div>
 
-### To run this project :
+### <b>To run this project :</b>
 
 Clone the project -
 ```
@@ -81,12 +71,25 @@ Start the project, navigate to the project directory on the terminal;
   $ python Rocket_launch.py
 ```
 
- #### Features to be added :
+<h4>
+<b>
+Scope :
+</b>
+</h4>
+<ul>
+<li>The project provides a comprehensive simulation of how the rocket launch takes place on earth and the various stages the rocket goes through after the launch.</li>
+<li>This is purely a 2D graphic animation.</li>
+<li>Any type of controlling systems is not used in this project.</li>
+</ul>
+</div>
+
+ #### <b>Features to be added :</b>
 - Keyboard controls to make it dynamic.
 - Create a 3D version. 
 
 ---
-- #### If you have any improvements create an issue and if you want you can also make a pull request for the same 
+
+#### <div align="center">If you have any improvements create an issue and if you want you can also make a pull request for the same. </div>
 
 ---
 
