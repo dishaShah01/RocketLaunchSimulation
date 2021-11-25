@@ -24,7 +24,7 @@
 <h4><b>Objective:</b></h4>
 
 To show the simulation of rocket launch and illustrate the concept using opengl.
-This project can be used for educational purposes or can also be incorporated into a game for liesure.
+This project can be used for educational purposes or can also be incorporated into a game for leisure.
 <h4>
 <b>
 Scope:
@@ -82,7 +82,8 @@ Start the project, navigate to the project directory on the terminal;
 ```
 
  #### Features to be added :
-- Keyboard controls for users to 
+- Keyboard controls to make it dynamic.
+- Create a 3D version. 
 
 ---
 - #### If you have any improvements create an issue and if you want you can also make a pull request for the same 
