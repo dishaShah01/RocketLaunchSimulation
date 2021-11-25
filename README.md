@@ -21,24 +21,18 @@
 </div>
 
 <div>
-<h4>
-<b>Objective:</b></h4>
+<h4><b>Objective:</b></h4>
 
 To show the simulation of rocket launch and illustrate the concept using opengl.
-
-<br>
-
-
+This project can be used for educational purposes or can also be incorporated into a game for liesure.
 <h4>
 <b>
 Scope:
 </b>
-<h4>
+</h4>
 <ul>
-<li>
-</li>
-<li>
-</li>
+<li> </li>
+<li> </li>
 </ul>
 </div>
 
@@ -88,7 +82,7 @@ Start the project, navigate to the project directory on the terminal;
 ```
 
  #### Features to be added :
-- Keyboard controls
+- Keyboard controls for users to 
 
 ---
 - #### If you have any improvements create an issue and if you want you can also make a pull request for the same 
