@@ -24,7 +24,6 @@ def stars():
         glVertex2i(x,y)
     glEnd()
 
-
 def grass():
     glColor3f(0.0,0.9,0.0)
     glPointSize(3)
@@ -34,6 +33,17 @@ def grass():
         y=random.randint(0,250)
         glVertex2i(x,y)
     glEnd()
+
+def moon(radius):  
+    global tx,ty,DEG2RAD
+    glBegin(GL_POLYGON)
+    for i in range(359):
+        degInRad = i*DEG2RAD
+        glVertex2f(300+ty+math.cos(degInRad)*radius,500-tx+(math.sin(degInRad))*radius)
+    glEnd()
+    tx=tx+0.1
+    ty=ty+0.1
+
 
 def control():
     global launch,sky_color,count,count1,tx,ty,fumes,DEG2RAD
@@ -299,8 +309,7 @@ def rocket_position():
 
 def Moving_Rocket():    
     global sky_color,count,tx,ty
-    count+=1
-    
+    count+=1    
     for i in range(195,201):
         if(count>=50):
             glClearColor(0.0 ,0.0 ,0.0,1.0)
@@ -393,15 +402,7 @@ def Moving_Rocket():
     glutPostRedisplay()
     glFlush()
 
-def moon(radius):  
-    global tx,ty,DEG2RAD
-    glBegin(GL_POLYGON)
-    for i in range(359):
-        degInRad = i*DEG2RAD
-        glVertex2f(300+ty+math.cos(degInRad)*radius,500-tx+(math.sin(degInRad))*radius)
-    glEnd()
-    tx=tx+0.1
-    ty=ty+0.1
+
 
 def iterate():
     glClearColor(0.196078  ,0.6 ,0.8,1.0)
