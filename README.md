@@ -49,17 +49,25 @@ This project can be used for educational purposes or can also be incorporated in
 
 </div>
 
-### <b>To run this project :</b>
+## <b>To run this project :</b>
 
-Clone the project -
+### Clone the project -
 ```
   $ git clone https://github.com/dishaShah01/RocketLaunchSimulation.git
 ```
   
-Install all the requirements -
+### Install all the requirements -
 ```
  $ pip install PyOpenGL PyOpenGL_accelerate
 ```
+#### <b>Note :</b>
+The `requirements.txt` file should list all Python libraries that the project
+depends on along with their versions, and they will be installed using:
+
+```
+pip install -r requirements.txt
+```
+
 Start the project, navigate to the project directory on the terminal;
  ### Run the script -
  for linux/mac :
